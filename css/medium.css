@@ -1,0 +1,12 @@
+@media (max-width:32.5em) {
+    .my-name{
+        color:blueviolet;
+    }
+    img{
+        height:45px;
+        width:80px;
+    }
+    .main-heading{
+        color:olive;
+    }
+}

@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="homepage"/>
         <title>WDD 230 Homepage</title>
+
         <link rel="stylesheet" href="css/homepage-styles.css"/>
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="css/medium.css"/>
+
         <script src="javascript/homepage-js.js" defer="true"></script>
     </head>
     <body>
         <div class="content">
             <header>
                 <div class="header-box">
-                    <img  src="images/me.jpg" alt="Meee">
+                    <img  src="images/me.jpeg" alt="Meee">
                     <h1 class="my-name">Samuel D. Martineau</h1>
                 </div>
             </header>
@@ -38,7 +43,7 @@
 
             <footer>
                 <div class="footer-box">
-                    <div class="copyright">&copy 2022 .:|:. Samuel D. Martineau .:|:. Utah</div>
+                    <div class="copyright">&copy <span id="year"></span> .:|:. Samuel D. Martineau .:|:. Utah</div>
                     <div class="update" >Last Updated: <span id="update"></span></div>
                 </div>
             </footer>
