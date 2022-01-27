@@ -34,7 +34,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: #eee;
+    color: white;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -43,12 +43,12 @@ nav ul li a {
 
 
 nav ul li a:hover {
-    background-color: #aaa;
-    color: #333;
+    background-color: #324B4C;
+    color:  white;
 }
 nav ul li.active a {
     background-color: #000;
-    color: #fff;
+    color: white;
 }
 /*----------- MAIN --------------*/
 main {
