@@ -1,0 +1,139 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu&display=swap');
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    width:100%;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #324B4C;
+    display:flex;
+    flex-direction:column;
+}
+.header-box{margin:auto;}
+.title-flex{display:flex;align-items:center; flex-direction:column;width:100px;}
+header img{float:left; margin-right:10px; width: 50px;}
+header h1 { margin:0;font-size:1.3rem; color:white;font-family: 'Ubuntu', sans-serif;}
+header h2 {margin: 0; font-weight: normal;color:white; font-size:1rem; font-family: 'Ubuntu', sans-serif;}
+
+.time{width:100vw;height:2.5rem;background-color:#2B676A; color:white; text-align:center; display:flex; align-items: center; justify-content: center;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    
+    padding:0.8rem;
+}
+nav button{
+    background-color: transparent;
+    border:none;
+    font-size:2rem;
+    color:white;
+    text-align:center;
+}
+#ham span:nth-child(1){
+    display:block;
+}
+#ham span:nth-child(2){
+    display:none;
+}
+#ham.open span:nth-child(1){
+    display:none;
+}
+#ham.open span:nth-child(2){
+    display:block;
+}
+#line.open{
+    margin-top:3rem;
+}
+nav ul {
+    display:none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.open{display:block;}
+nav ul li a:last-child{
+    border-bottom:1px solid white;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    border-top:1px solid white;
+}
+
+
+nav ul li a:hover {
+    font-size:1rem;
+    transition: font-size 0.25s ease-in-out;
+}
+nav ul li.active a {
+    font-size:1rem;
+    background-color:#2B676A;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+/*----------- FOOTER --------------*/
+
+.footer-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer-flex-item{
+    flex-basis:100%;
+}
+.footer-img-flex{
+    display:flex;
+    align-items: center;
+}
+footer {
+    background-color: #324B4C;
+    padding: .5rem 2%;
+    text-align: center;
+    position:absolute;
+    bottom:0;
+    width:100vw;
+    color:white;
+}
+
+footer img{
+    margin:0;
+    width:50px;
+}
+footer h3{
+    margin:0;
+    font-size:0.95rem;
+}
+footer p{
+    margin:0;
+    font-size:0.9rem;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
