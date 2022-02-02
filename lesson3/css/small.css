@@ -17,6 +17,7 @@ body {
 header {
     padding: .5rem 2%;
     background-color: #009688;
+    color:white;
 }
 header img{float:left; margin-right:10px; width: 50px;}
 header h1 {margin: 0; font-size:1.3rem}
@@ -25,8 +26,11 @@ header h2 {margin: 0; font-weight: normal; font-size:1rem;}
 /*----------- NAVIGATION --------------*/
 nav {
     background-color: #a3a384;
+    display:flex;
+    justify-content: center;
 }
 nav ul {
+    flex-basis:100%;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -90,6 +94,7 @@ main {
 
 /*----------- FOOTER --------------*/
 footer {
+    color:white;
     background-color: #009688;
     padding: .5rem 2%;
     text-align: center;
