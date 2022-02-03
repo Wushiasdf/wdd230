@@ -2,19 +2,24 @@
 // Function for adding to List
 
 function addChapter(){
+    
     let chapter = document.getElementById("favchap").value;
 
-    let listItem = document.createElement("li");
-    listItem.innerHTML = chapter;
+    if (chapter != ""){
 
-    let btn = document.createElement("button");
-    btn.innerHTML = "X";
-    btn.setAttribute("onclick","removeChapter(this)");
+        let listItem = document.createElement("li");
+        listItem.innerHTML = chapter;
 
-    listItem.appendChild(btn);
-    let list = document.querySelector(".list");
-    list.appendChild(listItem);
+        let btn = document.createElement("button");
+        btn.innerHTML = "X";
+        btn.setAttribute("onclick","removeChapter(this)");
 
+        listItem.appendChild(btn);
+        let list = document.querySelector(".list");
+        list.appendChild(listItem);
+
+        document.getElementById("favchap").value = "";
+    }
 
 }
 
