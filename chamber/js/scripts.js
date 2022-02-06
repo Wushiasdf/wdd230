@@ -20,6 +20,13 @@ function toggleMenu(){
 	document.querySelector("#ham").classList.toggle("open");
 	document.querySelector("#line").classList.toggle("open");
 }
-
 const ham = document.querySelector("#ham");
 ham.onclick = toggleMenu
+
+// Meet and Greet Banner
+
+let day = now.getDay();
+if (day == 1 || day == 2){
+	document.querySelector("#banner-message").classList.toggle("show");
+}
+

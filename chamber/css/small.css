@@ -5,21 +5,36 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+/*-----------  EFFECTS  --------------*/
+.show{
+    display:block !important;
+}
+
+
 
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
     font-family: 'PT Sans', sans-serif;
     width:100%;
+    overflow-x: hidden;
 }
 
 
 /*----------- HEADER --------------*/
+.mg-banner{
+    text-align: center;
+    display:none;
+}
+.mg-banner p{
+    color:#2B676A;
+}
 header {
     padding: .5rem 2%;
     background-color: #324B4C;
     display:flex;
     flex-direction:column;
+    width:100vw;
 }
 .header-box{margin:auto;}
 .title-flex{display:flex;align-items:center; flex-direction:column;width:100px;}
@@ -27,7 +42,7 @@ header img{float:left; margin-right:10px; width: 50px;}
 header h1 { margin:0;font-size:1.3rem; color:white;font-family: 'Ubuntu', sans-serif;}
 header h2 {margin: 0; font-weight: normal;color:white; font-size:1rem; font-family: 'Ubuntu', sans-serif;}
 
-.time{width:100vw;height:2.5rem;background-color:#2B676A; color:white; text-align:center; display:flex; align-items: center; justify-content: center;}
+.time{width:100vw;height:2.5rem;background-color:#2B676A; color:white; text-align:center; display:flex; align-items: center; justify-content: center; margin-bottom:1rem;}
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -88,8 +103,36 @@ nav ul li.active a {
 }
 /*----------- MAIN --------------*/
 main {
-    padding: 0 2%;
+    padding: 1rem 2%;
     min-height: 10rem;
+    
+}
+.grid{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section{
+    border:2px solid #2B676A;
+    margin:0;
+    background-color: gainsboro;
+    color:#324B4C;
+    margin-bottom: 2vh;
+}
+main h3{
+    padding:0 0.8em;
+    font-family: 'Ubuntu', sans-serif;
+}
+main p{
+    padding:0 0.8em;
+}
+.join,.spotlight3{
+    display:none;
+}
+.hero img{
+    margin:3%;
+    width:95%;
+    display:block;
 }
 
 /*----------- FOOTER --------------*/
@@ -110,10 +153,10 @@ footer {
     background-color: #324B4C;
     padding: .5rem 2%;
     text-align: center;
-    position:absolute;
-    bottom:0;
     width:100vw;
     color:white;
+    margin-top:1rem;
+    position:relative;
 }
 
 footer img{
