@@ -33,7 +33,7 @@
 <!-- HEADER HERE -->
 	<header class="clearfix">
     <div class="header-box">    
-	<img src="images/logo.png" alt="logo"/>
+	<img src="images/logo.webp" alt="logo"/>
     <div class="title-flex">
     <h1>Wushiville</h1>
     <h2>Chamber of Commerce</h2>
@@ -44,7 +44,7 @@
         <hr/>
         <button id="ham"><span>&#9776;</span><span>X</span></button>
         <ul id="nav">
-            <li class="active"><a href="#">Discovery</a></li>
+            <li class="active"><a href="#">Discover</a></li>
             <li><a href="#">Directory</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Contact</a></li>    
@@ -55,6 +55,13 @@
     <div class="time"></div> 
 <!-- CONTENT HERE -->
     <main>
+        <picture>
+            <source media="(max-width:200px)" srcset="images/heroSrc200.jpg">
+            <source media="(max-width:500px)" srcset="images/heroSrc500.jpg">
+            <source media="(max-width:800px)" srcset="images/heroSrc800.jpg">
+            <img src="images/heroSrc1100.jpg" alt="img-banner"/>
+        </picture>
+        <h1 class="page-title">Discover</h1>
         <article class="grid">
             <section class="events">
                 <h3>Event</h3>
@@ -94,7 +101,7 @@
     <footer>
         <div class="footer-flex">
             <div class="footer-img-flex footer-flex-item">
-                <img src="images/logo.png" alt="logo"/>
+                <img src="images/logo.webp" alt="logo"/>
            
                 <h3>Wushiville Chamber of Commerce</h3>
             </div>

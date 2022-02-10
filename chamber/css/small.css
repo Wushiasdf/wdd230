@@ -102,11 +102,17 @@ nav ul li.active a {
     background-color:#2B676A;
 }
 /*----------- MAIN --------------*/
+main picture{
+    width:75%;
+}
+main picture img{width:100%;margin-bottom: 2rem;}
 main {
     padding: 1rem 2%;
     min-height: 10rem;
     
 }
+.page-title{color:#2B676A; font-family: 'Ubuntu', sans-serif;}
+
 .grid{
     display:flex;
     flex-direction: column;
