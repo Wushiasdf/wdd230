@@ -132,9 +132,7 @@ main h3{
 main p{
     padding:0 0.8em;
 }
-.join,.spotlight3{
-    display:none;
-}
+
 .hero img{
     margin:3%;
     width:95%;
