@@ -63,7 +63,9 @@ main{
     grid-column: 4/5;
     grid-row: 2/3;
 }
-
+.wind-chill{
+    font-size:1rem;
+}
 
 /*----------- FOOTER --------------*/
     
